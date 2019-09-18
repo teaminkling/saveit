@@ -1,25 +1,14 @@
-# Software Requirements Document
+# Features
 
-## User Stories
+This is a requirements documentation that lives with the repository. Any and all features that are added to the product need to be updated here.
 
-> What does the user want?
+## Functional
 
-Write here what the user requires from the system. The preferred form is "Given X, when Y, then Z."
+- Given that a Reddit user is authenticated, when a schedule is run and/or a button is pressed, provide the ability to sync a personal database with all saved comments, links, images, videos, and otherwise (henceforth known as a "resource").
+- Given that a Reddit user is authenticated, when a webhook endpoint is hit, a single resource is stored in the database.
+- Given that a Reddit user is authenticated, when a new resource is stored, when applicable, it is downloaded and saved for offline usage.
+- Given that a Reddit user is authenticated, when a request for resources arrives, it can be filtered, sorted, and grouped by subreddit.
 
-## Functional Requirements
+## Non-Functional
 
-> How does the entire software system need to behave in order to fulfil the user's demands?
-
-1. There is a many-to-many relationship between user stories and functional requirements.
-2. Functional requirements have a 1-to-many relationship to acceptance tests.
-3. Functional requirements have a 1-to-1 (but not onto) relationship with Epics.
-
-> Individual bugs and feature tickets are not included on this page, but they are derived 1-to-many from functional and non-functional requirements.
-
-## Non-Functional Requirements
-
-> What is needed from the operation of the system (rather than the behaviour)?
-
-## Architecture
-
-If sufficiently complicated, provide Unified Modelling Language (UML) diagrams as needed to understand how the system works. Don't be too formal: just allow people to understand it.
+- Privacy is paramount. Encryption isn't required for links but it should not be possible to link it to a Reddit account immediately.
