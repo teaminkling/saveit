@@ -1,6 +1,6 @@
-# saveit
+# SaveIt
 
-Reddit saves management service that connects to a database.
+Reddit saves management service.
 
 ## Rationale
 
@@ -18,9 +18,9 @@ Deploy this API service to some server, log in (OAuth2), and access saves.
 
 ### Frontend Considerations
 
-`saveit` is a database-connected service offering a GraphQL API. That's it.
+`saveit` is a database-connected service offering a RESTful API. That's it.
 
-There's no reason Reddit-like communities could not also sync to this service by configuring RSS to webhooks, and different frontends can show this content.
+There's no reason Reddit-like communities could not also sync to this service. I am considering implementing a basic one as a web application, but I welcome applications developers to go for it.
 
 ### Cloud Version
 
